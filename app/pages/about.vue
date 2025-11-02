@@ -42,9 +42,7 @@
 									</div>
 									<div>
 										<h3 class="font-semibold mb-1 font-pt-serif">Continuous Learning</h3>
-										<p class="text-sm text-gray-600">
-											Always exploring new technologies and best practices
-										</p>
+										<p class="text-sm text-gray-600">Always learning new tools and techniques</p>
 									</div>
 								</div>
 								<div class="flex items-start gap-4">
@@ -128,7 +126,7 @@
 					</UCard>
 				</div>
 
-				<UCard class="mt-8 bg-royal-100">
+				<UCard class="mt-8 bg-linear-to-tr from-primary/20 to-primary/10">
 					<div class="space-y-4">
 						<h3 class="text-xl font-semibold font-pt-serif">My Approach</h3>
 						<ul class="space-y-3 text-gray-700">
