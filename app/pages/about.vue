@@ -256,7 +256,7 @@
 								target="_blank"
 								size="lg"
 								color="gray"
-								variant="outline"
+								variant="subtle"
 								icon="i-simple-icons-linkedin"
 							>
 								Connect on LinkedIn

@@ -13,7 +13,7 @@
 					</p>
 					<div class="flex gap-4 opacity-0 animate-fade-in stagger-2">
 						<UButton to="/projects" size="lg">View My Work</UButton>
-						<UButton to="/about" color="gray" variant="outline" size="lg">About Me</UButton>
+						<UButton to="/about" color="gray" variant="subtle" size="lg">About Me</UButton>
 					</div>
 				</div>
 			</UContainer>
@@ -57,14 +57,14 @@
 								<h3 class="text-xl font-semibold">{{ work.title }}</h3>
 								<span class="text-sm text-gray-600">{{ work.period }}</span>
 							</div>
-							<p class="text-primary">{{ work.company }}</p>
+							<p class="font-semibold">{{ work.company }}</p>
 							<p class="text-gray-700">{{ work.description }}</p>
 							<div class="flex flex-wrap gap-2">
 								<UBadge
 									v-for="tech in work.technologies"
 									:key="tech"
 									color="secondary"
-									variant="outline"
+									variant="subtle"
 								>
 									{{ tech }}
 								</UBadge>
@@ -97,7 +97,7 @@
 									v-for="tech in project.meta.tech"
 									:key="tech"
 									color="secondary"
-									variant="outline"
+									variant="subtle"
 								>
 									{{ tech }}
 								</UBadge>
@@ -155,7 +155,7 @@
 									v-for="tag in article.meta.tags"
 									:key="tag"
 									color="secondary"
-									variant="outline"
+									variant="subtle"
 								>
 									{{ tag }}
 								</UBadge>

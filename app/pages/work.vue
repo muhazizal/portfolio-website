@@ -25,7 +25,7 @@
 									<div>
 										<h2 class="text-2xl font-semibold mb-2">{{ work.meta.title }}</h2>
 										<div class="flex flex-col gap-1 text-gray-600">
-											<p class="text-lg text-primary">{{ work.meta.company }}</p>
+											<p class="text-lg font-semibold">{{ work.meta.company }}</p>
 											<div class="flex items-center gap-3 text-sm">
 												<span class="flex items-center gap-1">
 													<UIcon name="i-heroicons-map-pin" />
@@ -51,18 +51,15 @@
 								/>
 
 								<!-- Technologies -->
-								<div>
-									<h3 class="text-sm font-semibold text-gray-600 mb-2">Technologies Used</h3>
-									<div class="flex flex-wrap gap-2">
-										<UBadge
-											v-for="tech in work.meta.technologies"
-											:key="tech"
-											color="secondary"
-											variant="outline"
-										>
-											{{ tech }}
-										</UBadge>
-									</div>
+								<div class="flex flex-wrap gap-2">
+									<UBadge
+										v-for="tech in work.meta.technologies"
+										:key="tech"
+										color="secondary"
+										variant="subtle"
+									>
+										{{ tech }}
+									</UBadge>
 								</div>
 							</div>
 						</UCard>

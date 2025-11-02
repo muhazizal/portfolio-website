@@ -41,7 +41,7 @@
 									v-for="tech in project.meta.technologies"
 									:key="tech"
 									color="gray"
-									variant="outline"
+									variant="subtle"
 									size="xs"
 								>
 									{{ tech }}

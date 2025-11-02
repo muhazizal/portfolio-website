@@ -41,7 +41,7 @@
 									v-for="tag in article.meta.tags?.slice(0, 3)"
 									:key="tag"
 									color="secondary"
-									variant="outline"
+									variant="subtle"
 								>
 									{{ tag }}
 								</UBadge>
