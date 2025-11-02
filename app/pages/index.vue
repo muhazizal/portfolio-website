@@ -4,7 +4,7 @@
 		<section class="py-20 md:py-32">
 			<UContainer>
 				<div class="max-w-3xl opacity-0 animate-fade-in">
-					<h1 class="text-5xl md:text-7xl font-bold mb-6 font-pt-serif">
+					<h1 class="text-5xl md:text-7xl font-bold mb-6">
 						Hi, I'm <span class="text-primary">Muhamad Aziz Al-asaad</span>
 					</h1>
 					<p class="text-xl md:text-2xl text-gray-600 mb-8 opacity-0 animate-fade-in stagger-1">
@@ -23,7 +23,7 @@
 		<section class="py-20 bg-linear-to-r from-primary/5 to-primary/10 border-primary/20 rounded-lg">
 			<UContainer>
 				<div class="max-w-3xl">
-					<h2 class="text-3xl md:text-4xl font-bold mb-6 font-pt-serif">About Me</h2>
+					<h2 class="text-3xl md:text-4xl font-bold mb-6">About Me</h2>
 					<p class="text-lg text-gray-700 mb-4">
 						I'm a fullstack javascript engineer with a passion for creating elegant solutions to
 						complex problems. With expertise in modern web technologies, I build scalable
@@ -42,7 +42,7 @@
 		<section class="py-20">
 			<UContainer>
 				<div class="flex justify-between items-center mb-12">
-					<h2 class="text-3xl md:text-4xl font-bold font-pt-serif">Work Experience</h2>
+					<h2 class="text-3xl md:text-4xl font-bold">Work Experience</h2>
 					<UButton to="/work" color="primary" variant="link">View all →</UButton>
 				</div>
 				<div class="grid gap-6 md:grid-cols-2">
@@ -54,7 +54,7 @@
 					>
 						<div class="space-y-3">
 							<div class="flex justify-between items-start">
-								<h3 class="text-xl font-semibold font-pt-serif">{{ work.title }}</h3>
+								<h3 class="text-xl font-semibold">{{ work.title }}</h3>
 								<span class="text-sm text-gray-600">{{ work.period }}</span>
 							</div>
 							<p class="text-primary">{{ work.company }}</p>
@@ -80,7 +80,7 @@
 			<UContainer>
 				<div class="flex justify-between items-center mb-12">
 					<UButton to="/projects" color="primary" variant="link">← View all</UButton>
-					<h2 class="text-3xl md:text-4xl font-bold font-pt-serif">Featured Projects</h2>
+					<h2 class="text-3xl md:text-4xl font-bold">Featured Projects</h2>
 				</div>
 				<div class="grid gap-6 md:grid-cols-2">
 					<UCard
@@ -90,7 +90,7 @@
 						:class="`stagger-${index + 1}`"
 					>
 						<div class="space-y-3 text-right">
-							<h3 class="text-xl font-semibold font-pt-serif">{{ project.meta.title }}</h3>
+							<h3 class="text-xl font-semibold">{{ project.meta.title }}</h3>
 							<p class="text-gray-700">{{ project.meta.description }}</p>
 							<div class="flex flex-wrap gap-2 justify-end">
 								<UBadge
@@ -134,7 +134,7 @@
 		<section class="py-20">
 			<UContainer>
 				<div class="flex justify-between items-center mb-12">
-					<h2 class="text-3xl md:text-4xl font-bold font-pt-serif">Latest Articles</h2>
+					<h2 class="text-3xl md:text-4xl font-bold">Latest Articles</h2>
 					<UButton to="/blog" color="primary" variant="link">View all →</UButton>
 				</div>
 				<div class="grid gap-6 md:grid-cols-2">
@@ -148,7 +148,7 @@
 							<div class="text-sm text-gray-600">
 								{{ formatDate(article.meta.date) }}
 							</div>
-							<h3 class="text-xl font-semibold font-pt-serif">{{ article.meta.title }}</h3>
+							<h3 class="text-xl font-semibold">{{ article.meta.title }}</h3>
 							<p class="text-gray-700">{{ article.meta.description }}</p>
 							<div class="flex flex-wrap gap-2">
 								<UBadge
@@ -173,7 +173,7 @@
 		<section class="py-20 bg-royal-100 rounded-lg">
 			<UContainer>
 				<div class="max-w-3xl mx-auto">
-					<h2 class="text-3xl md:text-4xl font-bold mb-12 text-center font-pt-serif">
+					<h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">
 						Frequently Asked Questions
 					</h2>
 					<UAccordion :items="faqItems" />
@@ -185,7 +185,7 @@
 		<section class="py-20">
 			<UContainer>
 				<div class="max-w-3xl mx-auto text-center">
-					<h2 class="text-3xl md:text-4xl font-bold mb-6 font-pt-serif">Let's Work Together</h2>
+					<h2 class="text-3xl md:text-4xl font-bold mb-6">Let's Work Together</h2>
 					<p class="text-xl text-gray-700 mb-8">
 						I'm available for freelance projects. Let's create something amazing together.
 					</p>

@@ -4,7 +4,7 @@
 			<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 				<!-- About -->
 				<div>
-					<h3 class="text-lg font-semibold mb-4 font-pt-serif">Muhamad Aziz Al-asaad</h3>
+					<h3 class="text-lg font-semibold mb-4">Muhamad Aziz Al-asaad</h3>
 					<p class="text-sm text-gray-600">
 						A passionate fullstack javascript engineer crafting seamless and engaging web
 						experiences.
@@ -13,7 +13,7 @@
 
 				<!-- Quick Links -->
 				<div>
-					<h3 class="text-lg font-semibold mb-4 font-pt-serif">Quick Links</h3>
+					<h3 class="text-lg font-semibold mb-4">Quick Links</h3>
 					<ul class="space-y-2">
 						<li v-for="link in navigation" :key="link.to">
 							<NuxtLink
@@ -28,7 +28,7 @@
 
 				<!-- Social Links -->
 				<div>
-					<h3 class="text-lg font-semibold mb-4 font-pt-serif">Connect</h3>
+					<h3 class="text-lg font-semibold mb-4">Connect</h3>
 					<div class="flex gap-4">
 						<UButton
 							icon="i-simple-icons-github"

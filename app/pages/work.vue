@@ -3,7 +3,7 @@
 		<UContainer>
 			<!-- Header -->
 			<div class="max-w-3xl mb-16 opacity-0 animate-fade-in">
-				<h1 class="text-4xl md:text-6xl font-bold mb-6 font-pt-serif">Work Experience</h1>
+				<h1 class="text-4xl md:text-6xl font-bold mb-6">Work Experience</h1>
 				<p class="text-xl text-gray-600">
 					My professional journey and the roles I've held throughout my career.
 				</p>
@@ -23,7 +23,7 @@
 								<!-- Header -->
 								<div class="flex flex-col md:flex-row md:justify-between md:items-start gap-3">
 									<div>
-										<h2 class="text-2xl font-semibold mb-2 font-pt-serif">{{ work.meta.title }}</h2>
+										<h2 class="text-2xl font-semibold mb-2">{{ work.meta.title }}</h2>
 										<div class="flex flex-col gap-1 text-gray-600">
 											<p class="text-lg text-primary">{{ work.meta.company }}</p>
 											<div class="flex items-center gap-3 text-sm">

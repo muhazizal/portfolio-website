@@ -3,7 +3,7 @@
 		<UContainer>
 			<!-- Header -->
 			<div class="max-w-3xl mx-auto mb-20 text-center opacity-0 animate-fade-in">
-				<h1 class="text-4xl md:text-6xl font-bold mb-6 font-pt-serif">About Me</h1>
+				<h1 class="text-4xl md:text-6xl font-bold mb-6">About Me</h1>
 				<p class="text-xl text-gray-600">
 					Get to know me, my journey, and what drives my passion for fullstack javascript
 					engineering.
@@ -14,7 +14,7 @@
 			<section class="max-w-4xl mx-auto mb-24 opacity-0 animate-fade-in stagger-1">
 				<div class="grid md:grid-cols-2 gap-12 items-center">
 					<div>
-						<h2 class="text-3xl md:text-4xl font-bold mb-6 font-pt-serif">My Journey</h2>
+						<h2 class="text-3xl md:text-4xl font-bold mb-6">My Journey</h2>
 						<div class="space-y-4 text-gray-700">
 							<p>
 								My journey into fullstack javascript engineering began with curiosity and evolved
@@ -41,7 +41,7 @@
 										<UIcon name="i-heroicons-academic-cap" class="w-6 h-6 text-primary my-auto" />
 									</div>
 									<div>
-										<h3 class="font-semibold mb-1 font-pt-serif">Continuous Learning</h3>
+										<h3 class="font-semibold mb-1">Continuous Learning</h3>
 										<p class="text-sm text-gray-600">Always learning new tools and techniques</p>
 									</div>
 								</div>
@@ -50,7 +50,7 @@
 										<UIcon name="i-heroicons-light-bulb" class="w-6 h-6 text-primary" />
 									</div>
 									<div>
-										<h3 class="font-semibold mb-1 font-pt-serif">Problem Solving</h3>
+										<h3 class="font-semibold mb-1">Problem Solving</h3>
 										<p class="text-sm text-gray-600">
 											Finding elegant solutions to complex challenges
 										</p>
@@ -61,7 +61,7 @@
 										<UIcon name="i-heroicons-users" class="w-6 h-6 text-primary" />
 									</div>
 									<div>
-										<h3 class="font-semibold mb-1 font-pt-serif">Collaboration</h3>
+										<h3 class="font-semibold mb-1">Collaboration</h3>
 										<p class="text-sm text-gray-600">
 											Working with teams to build amazing products
 										</p>
@@ -76,7 +76,7 @@
 			<!-- Development Philosophy -->
 			<section class="max-w-4xl mx-auto mb-24 opacity-0 animate-fade-in stagger-2">
 				<div class="text-center mb-12">
-					<h2 class="text-3xl md:text-4xl font-bold mb-4 font-pt-serif">Development Philosophy</h2>
+					<h2 class="text-3xl md:text-4xl font-bold mb-4">Development Philosophy</h2>
 					<p class="text-lg text-gray-600">The principles that guide my work and decision-making</p>
 				</div>
 
@@ -88,7 +88,7 @@
 							>
 								<UIcon name="i-heroicons-rocket-launch" class="w-6 h-6 text-primary" />
 							</div>
-							<h3 class="text-xl font-semibold font-pt-serif">Performance First</h3>
+							<h3 class="text-xl font-semibold">Performance First</h3>
 							<p class="text-sm text-gray-600">
 								Every millisecond matters. I build applications that are fast, efficient, and
 								provide an exceptional user experience.
@@ -102,7 +102,7 @@
 							>
 								<UIcon name="i-heroicons-code-bracket" class="w-6 h-6 text-primary" />
 							</div>
-							<h3 class="text-xl font-semibold font-pt-serif">Clean Code</h3>
+							<h3 class="text-xl font-semibold">Clean Code</h3>
 							<p class="text-sm text-gray-600">
 								Write code that's readable, maintainable, and scalable. Good code is a gift to your
 								future self and team.
@@ -117,7 +117,7 @@
 							>
 								<UIcon name="i-heroicons-heart" class="w-6 h-6 text-primary" />
 							</div>
-							<h3 class="text-xl font-semibold font-pt-serif">User-Centric</h3>
+							<h3 class="text-xl font-semibold">User-Centric</h3>
 							<p class="text-sm text-gray-600">
 								At the end of the day, it's about the user. Build with empathy, accessibility, and
 								user needs in mind.
@@ -128,7 +128,7 @@
 
 				<UCard class="mt-8 bg-linear-to-tr from-primary/20 to-primary/10">
 					<div class="space-y-4">
-						<h3 class="text-xl font-semibold font-pt-serif">My Approach</h3>
+						<h3 class="text-xl font-semibold">My Approach</h3>
 						<ul class="space-y-3 text-gray-700">
 							<li class="flex items-start gap-3">
 								<UIcon
@@ -171,7 +171,7 @@
 			<!-- Passions & Hobbies -->
 			<section class="max-w-4xl mx-auto opacity-0 animate-fade-in stagger-3">
 				<div class="text-center mb-12">
-					<h2 class="text-3xl md:text-4xl font-bold mb-4 font-pt-serif">Beyond Code</h2>
+					<h2 class="text-3xl md:text-4xl font-bold mb-4">Beyond Code</h2>
 					<p class="text-lg text-gray-600">What I do when I'm not coding</p>
 				</div>
 
@@ -182,7 +182,7 @@
 								<UIcon name="i-heroicons-book-open" class="w-6 h-6 text-primary" />
 							</div>
 							<div>
-								<h3 class="text-lg font-semibold mb-2 font-pt-serif">Learning</h3>
+								<h3 class="text-lg font-semibold mb-2">Learning</h3>
 								<p class="text-sm text-gray-600">
 									I'm an avid learner, constantly exploring on technology, philosophy, and personal
 									development. Learning is a lifelong journey.
@@ -197,7 +197,7 @@
 								<UIcon name="i-heroicons-sparkles" class="w-6 h-6 text-primary" />
 							</div>
 							<div>
-								<h3 class="text-lg font-semibold mb-2 font-pt-serif">Side Projects</h3>
+								<h3 class="text-lg font-semibold mb-2">Side Projects</h3>
 								<p class="text-sm text-gray-600">
 									Always tinkering with new ideas and technologies through personal projects and
 									experiments.
@@ -212,7 +212,7 @@
 								<UIcon name="i-heroicons-chat-bubble-left-right" class="w-6 h-6 text-primary" />
 							</div>
 							<div>
-								<h3 class="text-lg font-semibold mb-2 font-pt-serif">Sports</h3>
+								<h3 class="text-lg font-semibold mb-2">Sports</h3>
 								<p class="text-sm text-gray-600">
 									Active in sports, whether it's playing video games, workouts, or simply engaging
 									in physical activity.
@@ -227,7 +227,7 @@
 								<UIcon name="i-heroicons-pencil-square" class="w-6 h-6 text-primary" />
 							</div>
 							<div>
-								<h3 class="text-lg font-semibold mb-2 font-pt-serif">Writing</h3>
+								<h3 class="text-lg font-semibold mb-2">Writing</h3>
 								<p class="text-sm text-gray-600">
 									I enjoy sharing knowledge through technical writing and blog posts, helping others
 									learn from my experiences.
@@ -242,7 +242,7 @@
 			<section class="max-w-3xl mx-auto mt-24 text-center opacity-0 animate-fade-in stagger-4">
 				<UCard class="bg-linear-to-br from-primary/10 to-primary/5 border-primary/20">
 					<div class="space-y-6">
-						<h2 class="text-3xl font-bold font-pt-serif">Let's Connect</h2>
+						<h2 class="text-3xl font-bold">Let's Connect</h2>
 						<p class="text-lg text-gray-700">
 							I'm always open to discussing new opportunities, interesting projects, or just having
 							a conversation about technology.
