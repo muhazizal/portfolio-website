@@ -86,7 +86,7 @@
 					<UCard
 						v-for="(project, index) in featuredProjects"
 						:key="project.meta.path"
-						class="opacity-0 animate-fade-in bg-royal-50 border border-royal-300"
+						class="opacity-0 animate-fade-in bg-royal-50 border border-royal-200"
 						:class="`stagger-${index + 1}`"
 					>
 						<div class="space-y-3 text-right">

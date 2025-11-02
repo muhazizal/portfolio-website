@@ -14,7 +14,7 @@
 				<UCard
 					v-for="(project, index) in projects"
 					:key="project.meta.path"
-					class="opacity-0 animate-fade-in flex flex-col bg-royal-50 border border-royal-300"
+					class="opacity-0 animate-fade-in flex flex-col bg-royal-50 border border-royal-200"
 					:class="`stagger-${Math.min(index + 1, 5)}`"
 				>
 					<div class="space-y-4 flex-1 flex flex-col">
