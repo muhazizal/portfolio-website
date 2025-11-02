@@ -6,7 +6,7 @@ tech:
   - Pinia
   - Firebase
   - Vite
-github: https://github.com/yourusername/task-manager
+github: https://github.com/muhazizal/task-manager
 demo: https://tasks.example.com
 featured: false
 order: 2

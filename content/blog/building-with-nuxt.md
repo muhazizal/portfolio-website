@@ -2,7 +2,7 @@
 title: Building Modern Web Apps with Nuxt 3
 description: A comprehensive guide to getting started with Nuxt 3 and its powerful features.
 date: 2025-01-15
-author: Your Name
+author: Muhamad Aziz Al-asaad
 tags:
   - Nuxt.js
   - Vue.js

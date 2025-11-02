@@ -6,7 +6,7 @@ tech:
   - Stripe
   - Supabase
   - Tailwind CSS
-github: https://github.com/yourusername/ecommerce
+github: https://github.com/muhazizal/ecommerce
 demo: https://demo.example.com
 featured: true
 order: 1

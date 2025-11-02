@@ -27,8 +27,8 @@ export default defineNuxtConfig({
 	},
 
 	site: {
-		url: 'https://your-domain.com',
-		name: 'Your Name - Portfolio',
+		url: 'https://muhazizal.dev',
+		name: 'Muhamad Aziz Al-asaad - Portfolio',
 		description: 'Software Engineer Portfolio - Showcasing my work, experience, and articles',
 		defaultLocale: 'en',
 	},

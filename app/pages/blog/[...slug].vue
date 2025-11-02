@@ -110,7 +110,7 @@ const fullUrl = computed(() => {
 
 // SEO
 useSeoMeta({
-	title: `${article.value.title} - Your Name Blog`,
+	title: `${article.value.title} - Muhamad Aziz Al-asaad Blog`,
 	description: article.value.description,
 	ogTitle: article.value.title,
 	ogDescription: article.value.description,

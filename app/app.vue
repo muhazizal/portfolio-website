@@ -10,8 +10,8 @@
 
 <script setup>
 useSeoMeta({
-	title: 'Your Name - Portfolio',
-	ogTitle: 'Your Name - Portfolio',
+	title: 'Muhamad Aziz Al-asaad - Portfolio',
+	ogTitle: 'Muhamad Aziz Al-asaad - Portfolio',
 	description: 'Software Engineer Portfolio - Showcasing my work, experience, and articles',
 	ogDescription: 'Software Engineer Portfolio - Showcasing my work, experience, and articles',
 	ogImage: '/og-image.jpg',

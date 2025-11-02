@@ -250,11 +250,11 @@
 							a conversation about technology.
 						</p>
 						<div class="flex justify-center gap-4">
-							<UButton to="mailto:your.email@example.com" size="lg" icon="i-heroicons-envelope">
+							<UButton to="mailto:muhazizal.26@gmail.com" size="lg" icon="i-heroicons-envelope">
 								Send me an email
 							</UButton>
 							<UButton
-								to="https://linkedin.com/in/yourusername"
+								to="https://linkedin.com/in/muhamad-aziz-al-asaad"
 								target="_blank"
 								size="lg"
 								color="gray"
@@ -274,7 +274,7 @@
 <script setup>
 // SEO
 useSeoMeta({
-	title: 'About - Your Name Portfolio',
+	title: 'About - Muhamad Aziz Al-asaad Portfolio',
 	description:
 		'Learn more about my journey, development philosophy, and what drives my passion for software engineering',
 })

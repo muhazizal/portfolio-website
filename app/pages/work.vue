@@ -84,7 +84,7 @@ const { data: workExperiences } = await useAsyncData('all-work', () =>
 
 // SEO
 useSeoMeta({
-	title: 'Work Experience - Your Name Portfolio',
+	title: 'Work Experience - Muhamad Aziz Al-asaad Portfolio',
 	description: 'Browse my professional work experience and career journey',
 })
 </script>

@@ -4,7 +4,7 @@
 			<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 				<!-- About -->
 				<div>
-					<h3 class="text-lg font-semibold mb-4">Your Name</h3>
+					<h3 class="text-lg font-semibold mb-4">Muhamad Aziz Al-asaad</h3>
 					<p class="text-sm text-gray-400">
 						Software Engineer passionate about building beautiful and functional web applications.
 					</p>
@@ -33,7 +33,7 @@
 							icon="i-simple-icons-github"
 							color="gray"
 							variant="ghost"
-							to="https://github.com/yourusername"
+							to="https://github.com/muhazizal"
 							target="_blank"
 							aria-label="GitHub"
 						/>
@@ -41,24 +41,24 @@
 							icon="i-simple-icons-linkedin"
 							color="gray"
 							variant="ghost"
-							to="https://linkedin.com/in/yourusername"
+							to="https://linkedin.com/in/muhamad-aziz-al-asaad"
 							target="_blank"
 							aria-label="LinkedIn"
 						/>
 						<UButton
-							icon="i-simple-icons-twitter"
+							icon="i-simple-icons-instagram"
 							color="gray"
 							variant="ghost"
-							to="https://twitter.com/yourusername"
+							to="https://www.instagram.com/muhazizal"
 							target="_blank"
-							aria-label="Twitter"
+							aria-label="Instagram"
 						/>
 					</div>
 				</div>
 			</div>
 
 			<div class="mt-12 pt-8 border-t border-gray-800 text-center text-sm text-gray-400">
-				<p>&copy; {{ new Date().getFullYear() }} Your Name. All rights reserved.</p>
+				<p>&copy; {{ new Date().getFullYear() }} Muhamad Aziz Al-asaad. All rights reserved.</p>
 			</div>
 		</UContainer>
 	</footer>

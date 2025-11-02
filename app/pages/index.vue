@@ -5,7 +5,7 @@
 			<UContainer>
 				<div class="max-w-3xl opacity-0 animate-fade-in">
 					<h1 class="text-5xl md:text-7xl font-bold mb-6">
-						Hi, I'm <span class="text-primary">Your Name</span>
+						Hi, I'm <span class="text-primary">Muhamad Aziz Al-asaad</span>
 					</h1>
 					<p class="text-xl md:text-2xl text-gray-400 mb-8 opacity-0 animate-fade-in stagger-1">
 						A passionate software engineer crafting beautiful web experiences
@@ -172,7 +172,7 @@
 					<p class="text-xl text-gray-300 mb-8">
 						I'm available for freelance projects. Let's create something amazing together.
 					</p>
-					<UButton to="mailto:your.email@example.com" size="lg" icon="i-heroicons-envelope">
+					<UButton to="mailto:muhazizal.26@gmail.com" size="lg" icon="i-heroicons-envelope">
 						Get in Touch
 					</UButton>
 				</div>
@@ -233,7 +233,7 @@ const faqItems = [
 
 // SEO
 useSeoMeta({
-	title: 'Home - Your Name Portfolio',
+	title: 'Home - Muhamad Aziz Al-asaad Portfolio',
 	description: 'Software Engineer Portfolio - Showcasing my work, experience, and articles',
 })
 </script>

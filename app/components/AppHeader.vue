@@ -1,62 +1,62 @@
 <template>
-  <header class="sticky top-0 z-50 backdrop-blur-lg bg-background/80 border-b border-gray-800">
-    <UContainer>
-      <nav class="flex items-center justify-between h-16">
-        <!-- Logo -->
-        <NuxtLink to="/" class="text-xl font-bold hover:text-primary transition-colors">
-          YourName
-        </NuxtLink>
+	<header class="sticky top-0 z-50 backdrop-blur-lg bg-background/80 border-b border-gray-800">
+		<UContainer>
+			<nav class="flex items-center justify-between h-16">
+				<!-- Logo -->
+				<NuxtLink to="/" class="text-xl font-bold hover:text-primary transition-colors">
+					muhazizal
+				</NuxtLink>
 
-        <!-- Desktop Navigation -->
-        <ul class="hidden md:flex items-center gap-8">
-          <li v-for="link in navigation" :key="link.to">
-            <NuxtLink 
-              :to="link.to" 
-              class="text-sm hover:text-primary transition-colors"
-              active-class="text-primary"
-            >
-              {{ link.label }}
-            </NuxtLink>
-          </li>
-        </ul>
+				<!-- Desktop Navigation -->
+				<ul class="hidden md:flex items-center gap-8">
+					<li v-for="link in navigation" :key="link.to">
+						<NuxtLink
+							:to="link.to"
+							class="text-sm hover:text-primary transition-colors"
+							active-class="text-primary"
+						>
+							{{ link.label }}
+						</NuxtLink>
+					</li>
+				</ul>
 
-        <!-- Mobile Menu Button -->
-        <UButton
-          icon="i-heroicons-bars-3"
-          color="gray"
-          variant="ghost"
-          class="md:hidden"
-          @click="isMenuOpen = !isMenuOpen"
-        />
-      </nav>
+				<!-- Mobile Menu Button -->
+				<UButton
+					icon="i-heroicons-bars-3"
+					color="gray"
+					variant="ghost"
+					class="md:hidden"
+					@click="isMenuOpen = !isMenuOpen"
+				/>
+			</nav>
 
-      <!-- Mobile Navigation -->
-      <div v-if="isMenuOpen" class="md:hidden pb-4">
-        <ul class="flex flex-col gap-4">
-          <li v-for="link in navigation" :key="link.to">
-            <NuxtLink 
-              :to="link.to" 
-              class="block py-2 hover:text-primary transition-colors"
-              active-class="text-primary"
-              @click="isMenuOpen = false"
-            >
-              {{ link.label }}
-            </NuxtLink>
-          </li>
-        </ul>
-      </div>
-    </UContainer>
-  </header>
+			<!-- Mobile Navigation -->
+			<div v-if="isMenuOpen" class="md:hidden pb-4">
+				<ul class="flex flex-col gap-4">
+					<li v-for="link in navigation" :key="link.to">
+						<NuxtLink
+							:to="link.to"
+							class="block py-2 hover:text-primary transition-colors"
+							active-class="text-primary"
+							@click="isMenuOpen = false"
+						>
+							{{ link.label }}
+						</NuxtLink>
+					</li>
+				</ul>
+			</div>
+		</UContainer>
+	</header>
 </template>
 
 <script setup>
 const isMenuOpen = ref(false)
 
 const navigation = [
-  { label: 'Home', to: '/' },
-  { label: 'Work', to: '/work' },
-  { label: 'Projects', to: '/projects' },
-  { label: 'Blog', to: '/blog' },
-  { label: 'About', to: '/about' },
+	{ label: 'Home', to: '/' },
+	{ label: 'Work', to: '/work' },
+	{ label: 'Projects', to: '/projects' },
+	{ label: 'Blog', to: '/blog' },
+	{ label: 'About', to: '/about' },
 ]
 </script>

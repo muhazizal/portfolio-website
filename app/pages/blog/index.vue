@@ -87,7 +87,7 @@ const formatDate = (date) => {
 
 // SEO
 useSeoMeta({
-	title: 'Blog - Your Name Portfolio',
+	title: 'Blog - Muhamad Aziz Al-asaad Portfolio',
 	description: 'Read articles about web development, programming, and technology',
 })
 </script>

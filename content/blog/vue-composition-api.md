@@ -2,7 +2,7 @@
 title: Mastering Vue 3 Composition API
 description: Learn how to leverage the Composition API for better code organization and reusability.
 date: 2025-01-08
-author: Your Name
+author: Muhamad Aziz Al-asaad
 tags:
   - Vue.js
   - JavaScript
@@ -27,12 +27,12 @@ The Composition API allows you to organize code by logical concerns rather than 
 import { ref, computed } from 'vue'
 
 export default {
-  setup() {
-    const count = ref(0)
-    const doubled = computed(() => count.value * 2)
-    
-    return { count, doubled }
-  }
+	setup() {
+		const count = ref(0)
+		const doubled = computed(() => count.value * 2)
+
+		return { count, doubled }
+	},
 }
 ```
 

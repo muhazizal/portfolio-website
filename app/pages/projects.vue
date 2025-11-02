@@ -96,7 +96,7 @@ const { data: projects } = await useAsyncData('all-projects', () =>
 
 // SEO
 useSeoMeta({
-	title: 'Projects - Your Name Portfolio',
+	title: 'Projects - Muhamad Aziz Al-asaad Portfolio',
 	description: 'Browse my portfolio of web development projects and applications',
 })
 </script>
