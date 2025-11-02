@@ -13,5 +13,3 @@ demo: https://tasks.example.com
 image: /images/projects/tasks.jpg
 description: Collaborative task management application with real-time updates.
 ---
-
-A productivity tool for teams to manage tasks, set priorities, and track progress. Features include drag-and-drop, real-time collaboration, and mobile support.

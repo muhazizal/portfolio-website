@@ -1,5 +1,5 @@
 <template>
-	<div class="py-12">
+	<div class="py-12 max-w-4xl mx-auto">
 		<UContainer>
 			<!-- Header -->
 			<div class="max-w-3xl mb-16 opacity-0 animate-fade-in">
@@ -10,30 +10,30 @@
 			</div>
 
 			<!-- Work Experience List -->
-			<div class="space-y-8">
-				<div class="max-w-4xl">
+			<div>
+				<div class="max-w-4xl space-y-8">
 					<div
 						v-for="(work, index) in workExperiences"
-						:key="work._path"
+						:key="work.meta.path"
 						class="opacity-0 animate-fade-in"
 						:class="`stagger-${Math.min(index + 1, 5)}`"
 					>
-						<UCard>
+						<UCard class="bg-linear-to-br from-primary/5 to-primary/15 border-primary/20">
 							<div class="space-y-4">
 								<!-- Header -->
 								<div class="flex flex-col md:flex-row md:justify-between md:items-start gap-3">
 									<div>
-										<h2 class="text-2xl font-semibold mb-2 font-pt-serif">{{ work.title }}</h2>
+										<h2 class="text-2xl font-semibold mb-2 font-pt-serif">{{ work.meta.title }}</h2>
 										<div class="flex flex-col gap-1 text-gray-600">
-											<p class="text-lg text-primary">{{ work.company }}</p>
+											<p class="text-lg text-primary">{{ work.meta.company }}</p>
 											<div class="flex items-center gap-3 text-sm">
 												<span class="flex items-center gap-1">
 													<UIcon name="i-heroicons-map-pin" />
-													{{ work.location }}
+													{{ work.meta.location }}
 												</span>
 												<span class="flex items-center gap-1">
 													<UIcon name="i-heroicons-calendar" />
-													{{ work.period }}
+													{{ work.meta.period }}
 												</span>
 											</div>
 										</div>
@@ -41,22 +41,24 @@
 								</div>
 
 								<!-- Description -->
-								<p class="text-gray-700">{{ work.description }}</p>
+								<p class="text-gray-700">{{ work.meta.description }}</p>
 
 								<!-- Content Body -->
-								<ContentRenderer v-if="work.body" :value="work" class="prose max-w-none" />
+								<ContentRenderer
+									v-if="work.meta.body"
+									:value="work.meta.body"
+									class="prose max-w-none"
+								/>
 
 								<!-- Technologies -->
 								<div>
-									<h3 class="text-sm font-semibold text-gray-600 mb-2 font-pt-serif">
-										Technologies Used
-									</h3>
+									<h3 class="text-sm font-semibold text-gray-600 mb-2">Technologies Used</h3>
 									<div class="flex flex-wrap gap-2">
 										<UBadge
-											v-for="tech in work.technologies"
+											v-for="tech in work.meta.technologies"
 											:key="tech"
-											color="gray"
-											variant="subtle"
+											color="secondary"
+											variant="outline"
 										>
 											{{ tech }}
 										</UBadge>
@@ -79,7 +81,7 @@
 <script setup>
 // Fetch all work experiences
 const { data: workExperiences } = await useAsyncData('all-work', () =>
-	queryContent('work').sort({ order: 1 }).find()
+	queryCollection('work').select('meta').all()
 )
 
 // SEO

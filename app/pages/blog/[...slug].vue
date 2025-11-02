@@ -32,7 +32,7 @@
 
 					<!-- Tags -->
 					<div class="flex flex-wrap gap-2">
-						<UBadge v-for="tag in article.tags" :key="tag" color="primary" variant="subtle">
+						<UBadge v-for="tag in article.tags" :key="tag" color="primary" variant="outline">
 							{{ tag }}
 						</UBadge>
 					</div>

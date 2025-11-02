@@ -1,5 +1,5 @@
 <template>
-	<div class="py-12">
+	<div class="py-12 max-w-4xl mx-auto">
 		<UContainer>
 			<!-- Header -->
 			<div class="max-w-3xl mb-16 opacity-0 animate-fade-in">
@@ -10,42 +10,40 @@
 			</div>
 
 			<!-- Articles Grid -->
-			<div class="grid gap-8 md:grid-cols-2 max-w-5xl">
+			<div class="grid gap-8">
 				<NuxtLink
 					v-for="(article, index) in articles"
-					:key="article._path"
-					:to="article._path"
+					:key="article.meta.path"
+					:to="article.meta.path"
 					class="group opacity-0 animate-fade-in"
 					:class="`stagger-${Math.min(index + 1, 5)}`"
 				>
-					<UCard class="h-full hover:border-primary/50 transition-all duration-300">
+					<div class="h-full hover:border-primary/50 transition-all duration-300">
 						<div class="space-y-4">
 							<!-- Date & Tags -->
 							<div class="flex items-center justify-between text-sm">
-								<span class="text-gray-600">{{ formatDate(article.date) }}</span>
-								<UBadge v-if="article.featured" color="primary" variant="subtle"> Featured </UBadge>
+								<span class="text-gray-600">{{ formatDate(article.meta.date) }}</span>
 							</div>
 
 							<!-- Title -->
 							<h2
 								class="text-2xl font-semibold group-hover:text-primary transition-colors font-pt-serif"
 							>
-								{{ article.title }}
+								{{ article.meta.title }}
 							</h2>
 
 							<!-- Description -->
 							<p class="text-gray-700 line-clamp-3">
-								{{ article.description }}
+								{{ article.meta.description }}
 							</p>
 
 							<!-- Tags -->
 							<div class="flex flex-wrap gap-2">
 								<UBadge
-									v-for="tag in article.tags?.slice(0, 3)"
+									v-for="tag in article.meta.tags?.slice(0, 3)"
 									:key="tag"
-									color="gray"
+									color="secondary"
 									variant="outline"
-									size="xs"
 								>
 									{{ tag }}
 								</UBadge>
@@ -60,7 +58,7 @@
 								/>
 							</div>
 						</div>
-					</UCard>
+					</div>
 				</NuxtLink>
 			</div>
 
@@ -75,7 +73,7 @@
 <script setup>
 // Fetch all articles
 const { data: articles } = await useAsyncData('all-articles', () =>
-	queryContent('blog').sort({ date: -1 }).find()
+	queryCollection('blog').select('meta').all()
 )
 
 // Format date helper

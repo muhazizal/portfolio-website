@@ -1,5 +1,5 @@
 <template>
-	<div class="py-12">
+	<div class="py-12 max-w-4xl mx-auto">
 		<UContainer>
 			<!-- Header -->
 			<div class="max-w-3xl mb-16 opacity-0 animate-fade-in">
@@ -10,32 +10,27 @@
 			</div>
 
 			<!-- Projects Grid -->
-			<div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+			<div class="grid gap-6">
 				<UCard
 					v-for="(project, index) in projects"
-					:key="project._path"
-					class="opacity-0 animate-fade-in flex flex-col"
+					:key="project.meta.path"
+					class="opacity-0 animate-fade-in flex flex-col bg-royal-50 border border-royal-300"
 					:class="`stagger-${Math.min(index + 1, 5)}`"
 				>
 					<div class="space-y-4 flex-1 flex flex-col">
-						<!-- Badge for featured -->
-						<div v-if="project.featured" class="flex justify-end">
-							<UBadge color="primary" variant="subtle">Featured</UBadge>
-						</div>
-
 						<!-- Category & Title -->
 						<div>
-							<p class="text-sm text-primary mb-2">{{ project.category }}</p>
-							<h2 class="text-xl font-semibold font-pt-serif">{{ project.title }}</h2>
+							<p class="text-sm text-primary mb-2">{{ project.meta.category }}</p>
+							<h2 class="text-xl font-semibold font-pt-serif">{{ project.meta.title }}</h2>
 						</div>
 
 						<!-- Description -->
-						<p class="text-gray-700 flex-1">{{ project.description }}</p>
+						<p class="text-gray-700 flex-1">{{ project.meta.description }}</p>
 
 						<!-- Content Body -->
 						<ContentRenderer
-							v-if="project.body"
-							:value="project"
+							v-if="project.meta.body"
+							:value="project.meta.body"
 							class="prose prose-sm max-w-none flex-1"
 						/>
 
@@ -43,7 +38,7 @@
 						<div>
 							<div class="flex flex-wrap gap-2">
 								<UBadge
-									v-for="tech in project.tech"
+									v-for="tech in project.meta.technologies"
 									:key="tech"
 									color="gray"
 									variant="outline"
@@ -57,23 +52,23 @@
 						<!-- Links -->
 						<div class="flex gap-3 pt-2">
 							<UButton
-								v-if="project.demo"
-								:to="project.demo"
+								v-if="project.meta.demo"
+								:to="project.meta.demo"
 								target="_blank"
 								size="sm"
 								icon="i-heroicons-arrow-top-right-on-square"
 							>
-								Live Demo
+								Demo
 							</UButton>
 							<UButton
-								v-if="project.github"
-								:to="project.github"
+								v-if="project.meta.github"
+								:to="project.meta.github"
 								target="_blank"
 								color="gray"
 								size="sm"
 								icon="i-simple-icons-github"
 							>
-								GitHub
+								Code
 							</UButton>
 						</div>
 					</div>
@@ -91,7 +86,7 @@
 <script setup>
 // Fetch all projects
 const { data: projects } = await useAsyncData('all-projects', () =>
-	queryContent('projects').sort({ order: 1 }).find()
+	queryCollection('project').select('meta').all()
 )
 
 // SEO
