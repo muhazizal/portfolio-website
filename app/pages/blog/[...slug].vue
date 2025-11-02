@@ -93,11 +93,11 @@ const fullUrl = computed(() => {
 
 // SEO
 useSeoMeta({
-	title: `${article.value.title} - Muhamad Aziz Al-asaad Blog`,
-	description: article.value.description,
-	ogTitle: article.value.title,
-	ogDescription: article.value.description,
-	ogImage: article.value.image,
+	title: `${article.value.meta.title} - Muhamad Aziz Al-asaad Blog`,
+	description: article.value.meta.description,
+	ogTitle: article.value.meta.title,
+	ogDescription: article.value.meta.description,
+	ogImage: article.value.meta.image,
 	twitterCard: 'summary_large_image',
 })
 </script>
