@@ -12,39 +12,22 @@
 				</NuxtLink>
 
 				<!-- Article Header -->
-				<header class="mb-12 opacity-0 animate-fade-in">
+				<header class="mb-16 opacity-0 animate-fade-in">
 					<!-- Meta -->
 					<div class="flex items-center gap-3 text-sm text-gray-600 mb-4">
-						<span>{{ formatDate(article.date) }}</span>
+						<span>{{ formatDate(article.meta.date) }}</span>
 						<span>•</span>
-						<span>{{ article.author }}</span>
-					</div>
-
-					<!-- Title -->
-					<h1 class="text-4xl md:text-6xl font-bold mb-6 font-pt-serif">
-						{{ article.title }}
-					</h1>
-
-					<!-- Description -->
-					<p class="text-xl text-gray-700 mb-6">
-						{{ article.description }}
-					</p>
-
-					<!-- Tags -->
-					<div class="flex flex-wrap gap-2">
-						<UBadge v-for="tag in article.tags" :key="tag" color="primary" variant="outline">
-							{{ tag }}
-						</UBadge>
+						<span>{{ article.meta.author }}</span>
 					</div>
 				</header>
 
 				<!-- Article Content -->
 				<div class="opacity-0 animate-fade-in stagger-1">
-					<ContentRenderer :value="article" class="prose prose-lg max-w-none" />
+					<ContentRenderer :value="article.meta" class="prose prose-lg max-w-none" />
 				</div>
 
 				<!-- Article Footer -->
-				<footer class="mt-16 pt-8 border-t border-gray-200 opacity-0 animate-fade-in stagger-2">
+				<footer class="mt-16 opacity-0 animate-fade-in stagger-2">
 					<div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
 						<!-- Share -->
 						<div>
@@ -53,7 +36,7 @@
 							</h3>
 							<div class="flex gap-3">
 								<UButton
-									:to="`https://twitter.com/intent/tweet?text=${encodeURIComponent(article.title)}&url=${encodeURIComponent(fullUrl)}`"
+									:to="`https://twitter.com/intent/tweet?text=${encodeURIComponent(article.meta.title)}&url=${encodeURIComponent(fullUrl)}`"
 									target="_blank"
 									color="gray"
 									variant="ghost"
@@ -70,9 +53,6 @@
 								/>
 							</div>
 						</div>
-
-						<!-- Back to Blog -->
-						<UButton to="/blog" color="primary" variant="outline"> View All Articles </UButton>
 					</div>
 				</footer>
 			</article>
@@ -85,8 +65,9 @@ const route = useRoute()
 
 // Fetch the article
 const { data: article } = await useAsyncData(`article-${route.path}`, () =>
-	queryContent(route.path).findOne()
+	queryCollection('blog').select('meta').all()
 )
+article.value = article.value.find((item) => item.meta.path === route.path)
 
 // Handle not found
 if (!article.value) {
