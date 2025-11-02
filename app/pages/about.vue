@@ -38,7 +38,7 @@
 							<div class="space-y-6">
 								<div class="flex items-start gap-4">
 									<div class="p-3 rounded-lg bg-primary/10 border border-primary/20">
-										<UIcon name="i-heroicons-academic-cap" class="w-6 h-6 text-primary" />
+										<UIcon name="i-heroicons-academic-cap" class="w-6 h-6 text-primary my-auto" />
 									</div>
 									<div>
 										<h3 class="font-semibold mb-1 font-pt-serif">Continuous Learning</h3>
@@ -83,7 +83,7 @@
 				</div>
 
 				<div class="grid md:grid-cols-3 gap-6">
-					<UCard>
+					<UCard class="bg-royal-50">
 						<div class="text-center space-y-3">
 							<div
 								class="w-12 h-12 mx-auto rounded-full bg-primary/10 flex items-center justify-center"
@@ -91,14 +91,13 @@
 								<UIcon name="i-heroicons-rocket-launch" class="w-6 h-6 text-primary" />
 							</div>
 							<h3 class="text-xl font-semibold font-pt-serif">Performance First</h3>
-							<p class="text-sm text-gray-400">
+							<p class="text-sm text-gray-600">
 								Every millisecond matters. I build applications that are fast, efficient, and
 								provide an exceptional user experience.
 							</p>
 						</div>
 					</UCard>
-
-					<UCard>
+					<UCard class="bg-royal-50">
 						<div class="text-center space-y-3">
 							<div
 								class="w-12 h-12 mx-auto rounded-full bg-primary/10 flex items-center justify-center"
@@ -106,14 +105,14 @@
 								<UIcon name="i-heroicons-code-bracket" class="w-6 h-6 text-primary" />
 							</div>
 							<h3 class="text-xl font-semibold font-pt-serif">Clean Code</h3>
-							<p class="text-sm text-gray-400">
+							<p class="text-sm text-gray-600">
 								Write code that's readable, maintainable, and scalable. Good code is a gift to your
 								future self and team.
 							</p>
 						</div>
 					</UCard>
 
-					<UCard>
+					<UCard class="bg-royal-50">
 						<div class="text-center space-y-3">
 							<div
 								class="w-12 h-12 mx-auto rounded-full bg-primary/10 flex items-center justify-center"
@@ -121,7 +120,7 @@
 								<UIcon name="i-heroicons-heart" class="w-6 h-6 text-primary" />
 							</div>
 							<h3 class="text-xl font-semibold font-pt-serif">User-Centric</h3>
-							<p class="text-sm text-gray-400">
+							<p class="text-sm text-gray-600">
 								At the end of the day, it's about the user. Build with empathy, accessibility, and
 								user needs in mind.
 							</p>
@@ -129,7 +128,7 @@
 					</UCard>
 				</div>
 
-				<UCard class="mt-8 bg-gray-100">
+				<UCard class="mt-8 bg-royal-100">
 					<div class="space-y-4">
 						<h3 class="text-xl font-semibold font-pt-serif">My Approach</h3>
 						<ul class="space-y-3 text-gray-700">
@@ -179,14 +178,14 @@
 				</div>
 
 				<div class="grid md:grid-cols-2 gap-6">
-					<UCard>
+					<UCard class="bg-royal-50">
 						<div class="flex items-start gap-4">
 							<div class="p-3 rounded-lg bg-primary/10">
 								<UIcon name="i-heroicons-book-open" class="w-6 h-6 text-primary" />
 							</div>
 							<div>
 								<h3 class="text-lg font-semibold mb-2 font-pt-serif">Learning</h3>
-								<p class="text-sm text-gray-400">
+								<p class="text-sm text-gray-600">
 									I'm an avid learner, constantly exploring on technology, philosophy, and personal
 									development. Learning is a lifelong journey.
 								</p>
@@ -194,14 +193,14 @@
 						</div>
 					</UCard>
 
-					<UCard>
+					<UCard class="bg-royal-50">
 						<div class="flex items-start gap-4">
 							<div class="p-3 rounded-lg bg-primary/10">
 								<UIcon name="i-heroicons-sparkles" class="w-6 h-6 text-primary" />
 							</div>
 							<div>
 								<h3 class="text-lg font-semibold mb-2 font-pt-serif">Side Projects</h3>
-								<p class="text-sm text-gray-400">
+								<p class="text-sm text-gray-600">
 									Always tinkering with new ideas and technologies through personal projects and
 									experiments.
 								</p>
@@ -209,14 +208,14 @@
 						</div>
 					</UCard>
 
-					<UCard>
+					<UCard class="bg-royal-50">
 						<div class="flex items-start gap-4">
 							<div class="p-3 rounded-lg bg-primary/10">
 								<UIcon name="i-heroicons-chat-bubble-left-right" class="w-6 h-6 text-primary" />
 							</div>
 							<div>
 								<h3 class="text-lg font-semibold mb-2 font-pt-serif">Sports</h3>
-								<p class="text-sm text-gray-400">
+								<p class="text-sm text-gray-600">
 									Active in sports, whether it's playing video games, workouts, or simply engaging
 									in physical activity.
 								</p>
@@ -224,14 +223,14 @@
 						</div>
 					</UCard>
 
-					<UCard>
+					<UCard class="bg-royal-50">
 						<div class="flex items-start gap-4">
 							<div class="p-3 rounded-lg bg-primary/10">
 								<UIcon name="i-heroicons-pencil-square" class="w-6 h-6 text-primary" />
 							</div>
 							<div>
 								<h3 class="text-lg font-semibold mb-2 font-pt-serif">Writing</h3>
-								<p class="text-sm text-gray-400">
+								<p class="text-sm text-gray-600">
 									I enjoy sharing knowledge through technical writing and blog posts, helping others
 									learn from my experiences.
 								</p>

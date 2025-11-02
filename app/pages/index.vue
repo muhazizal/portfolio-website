@@ -20,7 +20,7 @@
 		</section>
 
 		<!-- About Section -->
-		<section class="py-20 bg-gray-100">
+		<section class="py-20 bg-royal-100/50">
 			<UContainer>
 				<div class="max-w-3xl">
 					<h2 class="text-3xl md:text-4xl font-bold mb-6 font-pt-serif">About Me</h2>
@@ -71,7 +71,7 @@
 		</section>
 
 		<!-- Latest Projects -->
-		<section class="py-20 bg-gray-100">
+		<section class="py-20 bg-royal-100/50">
 			<UContainer>
 				<div class="flex justify-between items-center mb-12">
 					<h2 class="text-3xl md:text-4xl font-bold font-pt-serif">Featured Projects</h2>
@@ -154,7 +154,7 @@
 		</section>
 
 		<!-- FAQ Section -->
-		<section class="py-20 bg-gray-100">
+		<section class="py-20 bg-royal-100/50">
 			<UContainer>
 				<div class="max-w-3xl mx-auto">
 					<h2 class="text-3xl md:text-4xl font-bold mb-12 text-center font-pt-serif">

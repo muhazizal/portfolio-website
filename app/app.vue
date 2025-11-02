@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<AppHeader />
-		<main class="min-h-screen bg-gray-50 text-gray-800">
+		<main class="min-h-screen bg-royal-50 text-gray-800">
 			<NuxtPage />
 		</main>
 		<AppFooter />

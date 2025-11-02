@@ -1,11 +1,11 @@
 <template>
-	<footer class="border-t border-gray-200 py-12 bg-gray-50/60">
+	<footer class="border-t border-gray-200 py-12 bg-royal-50/70">
 		<UContainer>
 			<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 				<!-- About -->
 				<div>
 					<h3 class="text-lg font-semibold mb-4 font-pt-serif">Muhamad Aziz Al-asaad</h3>
-					<p class="text-sm text-gray-400">
+					<p class="text-sm text-gray-600">
 						A passionate fullstack javascript engineer crafting seamless and engaging web
 						experiences.
 					</p>
@@ -18,7 +18,7 @@
 						<li v-for="link in navigation" :key="link.to">
 							<NuxtLink
 								:to="link.to"
-								class="text-sm text-gray-400 hover:text-primary transition-colors"
+								class="text-sm text-gray-600 hover:text-primary transition-colors"
 							>
 								{{ link.label }}
 							</NuxtLink>

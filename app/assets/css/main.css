@@ -7,7 +7,7 @@
 	--color-royal-100: #e6edfd;
 	--color-royal-200: #c9dbfb;
 	--color-royal-300: #9dbbf8;
-	--color-royal-400: #6e99f0;
+	--color-royal-600: #6e99f0;
 	--color-royal-500: #4169e1; /* Royal Blue */
 	--color-royal-600: #3557c2;
 	--color-royal-700: #2b47a1;
@@ -16,7 +16,6 @@
 	--color-royal-950: #121c3f;
 
 	--color-primary: var(--color-royal-500);
-	--color-secondary: var(--color-gray-500);
 }
 
 /* Page transitions */
