@@ -3,7 +3,7 @@
 		<UContainer>
 			<!-- Header -->
 			<div class="max-w-3xl mb-16 opacity-0 animate-fade-in">
-				<h1 class="text-4xl md:text-6xl font-bold mb-6">Projects</h1>
+				<h1 class="text-4xl md:text-6xl font-bold mb-6 font-pt-serif">Projects</h1>
 				<p class="text-xl text-gray-400">
 					A collection of projects I've built, showcasing my skills and creativity.
 				</p>
@@ -26,7 +26,7 @@
 						<!-- Category & Title -->
 						<div>
 							<p class="text-sm text-primary mb-2">{{ project.category }}</p>
-							<h2 class="text-xl font-semibold">{{ project.title }}</h2>
+							<h2 class="text-xl font-semibold font-pt-serif">{{ project.title }}</h2>
 						</div>
 
 						<!-- Description -->

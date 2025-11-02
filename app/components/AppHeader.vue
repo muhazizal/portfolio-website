@@ -3,8 +3,11 @@
 		<UContainer>
 			<nav class="flex items-center justify-between h-16">
 				<!-- Logo -->
-				<NuxtLink to="/" class="text-xl font-bold hover:text-primary transition-colors">
-					muhazizal
+				<NuxtLink
+					to="/"
+					class="text-xl font-bold hover:text-primary transition-colors font-pt-serif"
+				>
+					muhazizal.dev
 				</NuxtLink>
 
 				<!-- Desktop Navigation -->

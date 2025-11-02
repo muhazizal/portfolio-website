@@ -4,7 +4,7 @@
 		<section class="py-20 md:py-32">
 			<UContainer>
 				<div class="max-w-3xl opacity-0 animate-fade-in">
-					<h1 class="text-5xl md:text-7xl font-bold mb-6">
+					<h1 class="text-5xl md:text-7xl font-bold mb-6 font-pt-serif">
 						Hi, I'm <span class="text-primary">Muhamad Aziz Al-asaad</span>
 					</h1>
 					<p class="text-xl md:text-2xl text-gray-400 mb-8 opacity-0 animate-fade-in stagger-1">
@@ -22,7 +22,7 @@
 		<section class="py-20 bg-gray-900/50">
 			<UContainer>
 				<div class="max-w-3xl">
-					<h2 class="text-3xl md:text-4xl font-bold mb-6">About Me</h2>
+					<h2 class="text-3xl md:text-4xl font-bold mb-6 font-pt-serif">About Me</h2>
 					<p class="text-lg text-gray-300 mb-4">
 						I'm a software engineer with a passion for creating elegant solutions to complex
 						problems. With expertise in modern web technologies, I build scalable applications that
@@ -41,7 +41,7 @@
 		<section class="py-20">
 			<UContainer>
 				<div class="flex justify-between items-center mb-12">
-					<h2 class="text-3xl md:text-4xl font-bold">Work Experience</h2>
+					<h2 class="text-3xl md:text-4xl font-bold font-pt-serif">Work Experience</h2>
 					<UButton to="/work" color="gray" variant="link">View all →</UButton>
 				</div>
 				<div class="grid gap-6 md:grid-cols-2">
@@ -53,7 +53,7 @@
 					>
 						<div class="space-y-3">
 							<div class="flex justify-between items-start">
-								<h3 class="text-xl font-semibold">{{ item.title }}</h3>
+								<h3 class="text-xl font-semibold font-pt-serif">{{ item.title }}</h3>
 								<span class="text-sm text-gray-400">{{ item.period }}</span>
 							</div>
 							<p class="text-primary">{{ item.company }}</p>
@@ -73,7 +73,7 @@
 		<section class="py-20 bg-gray-900/50">
 			<UContainer>
 				<div class="flex justify-between items-center mb-12">
-					<h2 class="text-3xl md:text-4xl font-bold">Featured Projects</h2>
+					<h2 class="text-3xl md:text-4xl font-bold font-pt-serif">Featured Projects</h2>
 					<UButton to="/projects" color="gray" variant="link">View all →</UButton>
 				</div>
 				<div class="grid gap-6 md:grid-cols-2">
@@ -84,7 +84,7 @@
 						:class="`stagger-${index + 1}`"
 					>
 						<div class="space-y-3">
-							<h3 class="text-xl font-semibold">{{ project.title }}</h3>
+							<h3 class="text-xl font-semibold font-pt-serif">{{ project.title }}</h3>
 							<p class="text-gray-300">{{ project.description }}</p>
 							<div class="flex flex-wrap gap-2">
 								<UBadge v-for="tech in project.tech" :key="tech" color="primary" variant="subtle">
@@ -122,7 +122,7 @@
 		<section class="py-20">
 			<UContainer>
 				<div class="flex justify-between items-center mb-12">
-					<h2 class="text-3xl md:text-4xl font-bold">Latest Articles</h2>
+					<h2 class="text-3xl md:text-4xl font-bold font-pt-serif">Latest Articles</h2>
 					<UButton to="/blog" color="gray" variant="link">View all →</UButton>
 				</div>
 				<div class="grid gap-6 md:grid-cols-2">
@@ -156,7 +156,7 @@
 		<section class="py-20 bg-gray-900/50">
 			<UContainer>
 				<div class="max-w-3xl mx-auto">
-					<h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">
+					<h2 class="text-3xl md:text-4xl font-bold mb-12 text-center font-pt-serif">
 						Frequently Asked Questions
 					</h2>
 					<UAccordion :items="faqItems" />
@@ -168,7 +168,7 @@
 		<section class="py-20">
 			<UContainer>
 				<div class="max-w-3xl mx-auto text-center">
-					<h2 class="text-3xl md:text-4xl font-bold mb-6">Let's Work Together</h2>
+					<h2 class="text-3xl md:text-4xl font-bold mb-6 font-pt-serif">Let's Work Together</h2>
 					<p class="text-xl text-gray-300 mb-8">
 						I'm available for freelance projects. Let's create something amazing together.
 					</p>

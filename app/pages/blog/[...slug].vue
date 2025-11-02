@@ -21,7 +21,7 @@
 					</div>
 
 					<!-- Title -->
-					<h1 class="text-4xl md:text-6xl font-bold mb-6">
+					<h1 class="text-4xl md:text-6xl font-bold mb-6 font-pt-serif">
 						{{ article.title }}
 					</h1>
 
@@ -48,7 +48,9 @@
 					<div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
 						<!-- Share -->
 						<div>
-							<h3 class="text-sm font-semibold text-gray-400 mb-3">Share this article</h3>
+							<h3 class="text-sm font-semibold text-gray-400 mb-3 font-pt-serif">
+								Share this article
+							</h3>
 							<div class="flex gap-3">
 								<UButton
 									:to="`https://twitter.com/intent/tweet?text=${encodeURIComponent(article.title)}&url=${encodeURIComponent(fullUrl)}`"

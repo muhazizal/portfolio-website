@@ -83,4 +83,13 @@
 /* Smooth scroll */
 html {
 	scroll-behavior: smooth;
+	font-family: 'PT Sans', sans-serif;
+}
+
+/* Font Families */
+.font-pt-sans {
+	font-family: 'PT Sans', sans-serif;
+}
+.font-pt-serif {
+	font-family: 'PT Serif', serif;
 }

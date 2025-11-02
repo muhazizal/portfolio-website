@@ -39,6 +39,9 @@ export default defineNuxtConfig({
 	},
 
 	fonts: {
-		families: [{ name: 'Inter', provider: 'google' }],
+		families: [
+			{ name: 'PT Sans', provider: 'google' },
+			{ name: 'PT Serif', provider: 'google' },
+		],
 	},
 })

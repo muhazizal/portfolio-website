@@ -3,7 +3,7 @@
 		<UContainer>
 			<!-- Header -->
 			<div class="max-w-3xl mb-16 opacity-0 animate-fade-in">
-				<h1 class="text-4xl md:text-6xl font-bold mb-6">Blog</h1>
+				<h1 class="text-4xl md:text-6xl font-bold mb-6 font-pt-serif">Blog</h1>
 				<p class="text-xl text-gray-400">
 					Thoughts, tutorials, and insights about web development and technology.
 				</p>
@@ -27,7 +27,9 @@
 							</div>
 
 							<!-- Title -->
-							<h2 class="text-2xl font-semibold group-hover:text-primary transition-colors">
+							<h2
+								class="text-2xl font-semibold group-hover:text-primary transition-colors font-pt-serif"
+							>
 								{{ article.title }}
 							</h2>
 
