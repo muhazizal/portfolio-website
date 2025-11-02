@@ -10,7 +10,7 @@
 			</div>
 
 			<!-- Articles Grid -->
-			<div class="grid gap-8">
+			<div class="grid gap-10">
 				<NuxtLink
 					v-for="(article, index) in articles"
 					:key="article.meta.path"
