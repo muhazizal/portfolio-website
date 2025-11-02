@@ -29,7 +29,7 @@ export default defineNuxtConfig({
 	site: {
 		url: 'https://muhazizal.dev',
 		name: 'Muhamad Aziz Al-asaad - Portfolio',
-		description: 'Software Engineer Portfolio - Showcasing my work, experience, and articles',
+		description: 'Fullstack Javascript Engineer - Showcasing my work, experience, and articles',
 		defaultLocale: 'en',
 	},
 

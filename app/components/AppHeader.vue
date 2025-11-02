@@ -1,5 +1,5 @@
 <template>
-	<header class="sticky top-0 z-50 backdrop-blur-lg bg-background/80 border-b border-gray-800">
+	<header class="sticky top-0 z-50 backdrop-blur-lg border-b border-gray-200 bg-white/70">
 		<UContainer>
 			<nav class="flex items-center justify-between h-16">
 				<!-- Logo -->

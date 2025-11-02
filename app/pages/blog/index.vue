@@ -4,7 +4,7 @@
 			<!-- Header -->
 			<div class="max-w-3xl mb-16 opacity-0 animate-fade-in">
 				<h1 class="text-4xl md:text-6xl font-bold mb-6 font-pt-serif">Blog</h1>
-				<p class="text-xl text-gray-400">
+				<p class="text-xl text-gray-600">
 					Thoughts, tutorials, and insights about web development and technology.
 				</p>
 			</div>
@@ -22,7 +22,7 @@
 						<div class="space-y-4">
 							<!-- Date & Tags -->
 							<div class="flex items-center justify-between text-sm">
-								<span class="text-gray-400">{{ formatDate(article.date) }}</span>
+								<span class="text-gray-600">{{ formatDate(article.date) }}</span>
 								<UBadge v-if="article.featured" color="primary" variant="subtle"> Featured </UBadge>
 							</div>
 
@@ -34,7 +34,7 @@
 							</h2>
 
 							<!-- Description -->
-							<p class="text-gray-300 line-clamp-3">
+							<p class="text-gray-700 line-clamp-3">
 								{{ article.description }}
 							</p>
 
@@ -66,7 +66,7 @@
 
 			<!-- Empty State -->
 			<div v-if="!articles?.length" class="text-center py-12">
-				<p class="text-gray-400">No articles found.</p>
+				<p class="text-gray-600">No articles found.</p>
 			</div>
 		</UContainer>
 	</div>

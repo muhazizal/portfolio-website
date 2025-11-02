@@ -4,7 +4,7 @@
 			<!-- Header -->
 			<div class="max-w-3xl mb-16 opacity-0 animate-fade-in">
 				<h1 class="text-4xl md:text-6xl font-bold mb-6 font-pt-serif">Projects</h1>
-				<p class="text-xl text-gray-400">
+				<p class="text-xl text-gray-600">
 					A collection of projects I've built, showcasing my skills and creativity.
 				</p>
 			</div>
@@ -30,13 +30,13 @@
 						</div>
 
 						<!-- Description -->
-						<p class="text-gray-300 flex-1">{{ project.description }}</p>
+						<p class="text-gray-700 flex-1">{{ project.description }}</p>
 
 						<!-- Content Body -->
 						<ContentRenderer
 							v-if="project.body"
 							:value="project"
-							class="prose prose-sm prose-invert max-w-none flex-1"
+							class="prose prose-sm max-w-none flex-1"
 						/>
 
 						<!-- Technologies -->
@@ -82,7 +82,7 @@
 
 			<!-- Empty State -->
 			<div v-if="!projects?.length" class="text-center py-12">
-				<p class="text-gray-400">No projects found.</p>
+				<p class="text-gray-600">No projects found.</p>
 			</div>
 		</UContainer>
 	</div>
@@ -105,13 +105,13 @@ useSeoMeta({
 @reference '../assets/css/main.css';
 
 :deep(.prose) {
-	@apply text-gray-300;
+	@apply text-gray-700;
 }
 
 :deep(.prose h1),
 :deep(.prose h2),
 :deep(.prose h3) {
-	@apply text-white;
+	@apply text-gray-900;
 }
 
 :deep(.prose a) {
@@ -119,6 +119,6 @@ useSeoMeta({
 }
 
 :deep(.prose code) {
-	@apply bg-gray-800 rounded px-1 py-0.5;
+	@apply bg-gray-100 rounded px-1 py-0.5;
 }
 </style>

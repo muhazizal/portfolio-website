@@ -1,6 +1,24 @@
 @import 'tailwindcss';
 @import '@nuxt/ui';
 
+/* Design tokens: custom royal blue palette for primary */
+@theme static {
+	--color-royal-50: #f3f6fe;
+	--color-royal-100: #e6edfd;
+	--color-royal-200: #c9dbfb;
+	--color-royal-300: #9dbbf8;
+	--color-royal-400: #6e99f0;
+	--color-royal-500: #4169e1; /* Royal Blue */
+	--color-royal-600: #3557c2;
+	--color-royal-700: #2b47a1;
+	--color-royal-800: #243a82;
+	--color-royal-900: #1e306b;
+	--color-royal-950: #121c3f;
+
+	--color-primary: var(--color-royal-500);
+	--color-secondary: var(--color-gray-500);
+}
+
 /* Page transitions */
 .page-enter-active,
 .page-leave-active {
@@ -84,6 +102,12 @@
 html {
 	scroll-behavior: smooth;
 	font-family: 'PT Sans', sans-serif;
+}
+
+/* Global light background and base text color */
+body {
+	background-color: #f7f7fb; /* very light gray */
+	color: #1f2937; /* gray-800 */
 }
 
 /* Font Families */

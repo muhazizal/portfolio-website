@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<AppHeader />
-		<main class="min-h-screen">
+		<main class="min-h-screen bg-gray-50 text-gray-800">
 			<NuxtPage />
 		</main>
 		<AppFooter />
@@ -12,8 +12,8 @@
 useSeoMeta({
 	title: 'Muhamad Aziz Al-asaad - Portfolio',
 	ogTitle: 'Muhamad Aziz Al-asaad - Portfolio',
-	description: 'Software Engineer Portfolio - Showcasing my work, experience, and articles',
-	ogDescription: 'Software Engineer Portfolio - Showcasing my work, experience, and articles',
+	description: 'Fullstack Javascript Engineer - Showcasing my work, experience, and articles',
+	ogDescription: 'Fullstack Javascript Engineer - Showcasing my work, experience, and articles',
 	ogImage: '/og-image.jpg',
 	twitterCard: 'summary_large_image',
 })

@@ -1,12 +1,13 @@
 <template>
-	<footer class="border-t border-gray-800 py-12 mt-24">
+	<footer class="border-t border-gray-200 py-12 bg-gray-50/60">
 		<UContainer>
 			<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 				<!-- About -->
 				<div>
 					<h3 class="text-lg font-semibold mb-4 font-pt-serif">Muhamad Aziz Al-asaad</h3>
 					<p class="text-sm text-gray-400">
-						Software Engineer passionate about building beautiful and functional web applications.
+						A passionate fullstack javascript engineer crafting seamless and engaging web
+						experiences.
 					</p>
 				</div>
 
@@ -57,7 +58,7 @@
 				</div>
 			</div>
 
-			<div class="mt-12 pt-8 border-t border-gray-800 text-center text-sm text-gray-400">
+			<div class="mt-12 pt-8 border-t border-gray-200 text-center text-sm text-gray-600">
 				<p>&copy; {{ new Date().getFullYear() }} Muhamad Aziz Al-asaad. All rights reserved.</p>
 			</div>
 		</UContainer>

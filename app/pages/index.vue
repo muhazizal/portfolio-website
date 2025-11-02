@@ -7,8 +7,9 @@
 					<h1 class="text-5xl md:text-7xl font-bold mb-6 font-pt-serif">
 						Hi, I'm <span class="text-primary">Muhamad Aziz Al-asaad</span>
 					</h1>
-					<p class="text-xl md:text-2xl text-gray-400 mb-8 opacity-0 animate-fade-in stagger-1">
-						A passionate software engineer crafting beautiful web experiences
+					<p class="text-xl md:text-2xl text-gray-600 mb-8 opacity-0 animate-fade-in stagger-1">
+						A passionate fullstack javascript engineer crafting seamless and engaging web
+						experiences.
 					</p>
 					<div class="flex gap-4 opacity-0 animate-fade-in stagger-2">
 						<UButton to="/projects" size="lg">View My Work</UButton>
@@ -19,18 +20,18 @@
 		</section>
 
 		<!-- About Section -->
-		<section class="py-20 bg-gray-900/50">
+		<section class="py-20 bg-gray-100">
 			<UContainer>
 				<div class="max-w-3xl">
 					<h2 class="text-3xl md:text-4xl font-bold mb-6 font-pt-serif">About Me</h2>
-					<p class="text-lg text-gray-300 mb-4">
-						I'm a software engineer with a passion for creating elegant solutions to complex
-						problems. With expertise in modern web technologies, I build scalable applications that
-						users love.
+					<p class="text-lg text-gray-700 mb-4">
+						I'm a fullstack javascript engineer with a passion for creating elegant solutions to
+						complex problems. With expertise in modern web technologies, I build scalable
+						applications that are both user-friendly and developer-friendly.
 					</p>
-					<p class="text-lg text-gray-300 mb-6">
-						I specialize in Vue.js, Nuxt.js, and the entire JavaScript ecosystem, focusing on
-						performance, accessibility, and user experience.
+					<p class="text-lg text-gray-700 mb-6">
+						I specialize in Vue.js, Nuxt.js, and Node.js, focusing on performance, accessibility,
+						and user experience.
 					</p>
 					<UButton to="/about" color="primary" variant="link">Learn more about me →</UButton>
 				</div>
@@ -42,7 +43,7 @@
 			<UContainer>
 				<div class="flex justify-between items-center mb-12">
 					<h2 class="text-3xl md:text-4xl font-bold font-pt-serif">Work Experience</h2>
-					<UButton to="/work" color="gray" variant="link">View all →</UButton>
+					<UButton to="/work" color="primary" variant="link">View all →</UButton>
 				</div>
 				<div class="grid gap-6 md:grid-cols-2">
 					<UCard
@@ -54,10 +55,10 @@
 						<div class="space-y-3">
 							<div class="flex justify-between items-start">
 								<h3 class="text-xl font-semibold font-pt-serif">{{ item.title }}</h3>
-								<span class="text-sm text-gray-400">{{ item.period }}</span>
+								<span class="text-sm text-gray-600">{{ item.period }}</span>
 							</div>
 							<p class="text-primary">{{ item.company }}</p>
-							<p class="text-gray-300">{{ item.description }}</p>
+							<p class="text-gray-700">{{ item.description }}</p>
 							<div class="flex flex-wrap gap-2">
 								<UBadge v-for="tech in item.technologies" :key="tech" color="gray" variant="subtle">
 									{{ tech }}
@@ -70,11 +71,11 @@
 		</section>
 
 		<!-- Latest Projects -->
-		<section class="py-20 bg-gray-900/50">
+		<section class="py-20 bg-gray-100">
 			<UContainer>
 				<div class="flex justify-between items-center mb-12">
 					<h2 class="text-3xl md:text-4xl font-bold font-pt-serif">Featured Projects</h2>
-					<UButton to="/projects" color="gray" variant="link">View all →</UButton>
+					<UButton to="/projects" color="primary" variant="link">View all →</UButton>
 				</div>
 				<div class="grid gap-6 md:grid-cols-2">
 					<UCard
@@ -85,7 +86,7 @@
 					>
 						<div class="space-y-3">
 							<h3 class="text-xl font-semibold font-pt-serif">{{ project.title }}</h3>
-							<p class="text-gray-300">{{ project.description }}</p>
+							<p class="text-gray-700">{{ project.description }}</p>
 							<div class="flex flex-wrap gap-2">
 								<UBadge v-for="tech in project.tech" :key="tech" color="primary" variant="subtle">
 									{{ tech }}
@@ -123,7 +124,7 @@
 			<UContainer>
 				<div class="flex justify-between items-center mb-12">
 					<h2 class="text-3xl md:text-4xl font-bold font-pt-serif">Latest Articles</h2>
-					<UButton to="/blog" color="gray" variant="link">View all →</UButton>
+					<UButton to="/blog" color="primary" variant="link">View all →</UButton>
 				</div>
 				<div class="grid gap-6 md:grid-cols-2">
 					<UCard
@@ -133,11 +134,11 @@
 						:class="`stagger-${index + 1}`"
 					>
 						<div class="space-y-3">
-							<div class="text-sm text-gray-400">
+							<div class="text-sm text-gray-600">
 								{{ formatDate(article.date) }}
 							</div>
 							<h3 class="text-xl font-semibold">{{ article.title }}</h3>
-							<p class="text-gray-300">{{ article.description }}</p>
+							<p class="text-gray-700">{{ article.description }}</p>
 							<div class="flex flex-wrap gap-2">
 								<UBadge v-for="tag in article.tags" :key="tag" color="gray" variant="subtle">
 									{{ tag }}
@@ -153,7 +154,7 @@
 		</section>
 
 		<!-- FAQ Section -->
-		<section class="py-20 bg-gray-900/50">
+		<section class="py-20 bg-gray-100">
 			<UContainer>
 				<div class="max-w-3xl mx-auto">
 					<h2 class="text-3xl md:text-4xl font-bold mb-12 text-center font-pt-serif">
@@ -169,7 +170,7 @@
 			<UContainer>
 				<div class="max-w-3xl mx-auto text-center">
 					<h2 class="text-3xl md:text-4xl font-bold mb-6 font-pt-serif">Let's Work Together</h2>
-					<p class="text-xl text-gray-300 mb-8">
+					<p class="text-xl text-gray-700 mb-8">
 						I'm available for freelance projects. Let's create something amazing together.
 					</p>
 					<UButton to="mailto:muhazizal.26@gmail.com" size="lg" icon="i-heroicons-envelope">
@@ -229,11 +230,16 @@ const faqItems = [
 		content:
 			'Project timelines vary depending on scope and complexity. I provide detailed estimates after understanding your requirements and can work within your deadlines.',
 	},
+	{
+		label: 'How can I pay you?',
+		content:
+			'Payment is done through Wise with down payment 50% and the rest upon project completion.',
+	},
 ]
 
 // SEO
 useSeoMeta({
 	title: 'Home - Muhamad Aziz Al-asaad Portfolio',
-	description: 'Software Engineer Portfolio - Showcasing my work, experience, and articles',
+	description: 'Fullstack Javascript Engineer - Showcasing my work, experience, and articles',
 })
 </script>
