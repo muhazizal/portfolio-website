@@ -23,9 +23,27 @@ export default defineNuxtConfig({
 			charset: 'utf-8',
 			viewport: 'width=device-width, initial-scale=1',
 			meta: [
+				{ property: 'og:title', content: 'Muhamad Aziz Al-asaad - Portfolio' },
+				{
+					property: 'og:description',
+					content: 'Fullstack Javascript Engineer - Showcasing my work, experience, and articles',
+				},
+				{ property: 'og:type', content: 'website' },
+				{ property: 'og:url', content: 'https://muhazizal.dev' },
 				{ property: 'og:image', content: '/og-image.jpg' },
+
 				{ name: 'twitter:card', content: 'summary_large_image' },
+				{ name: 'twitter:title', content: 'Muhamad Aziz Al-asaad - Portfolio' },
+				{
+					name: 'twitter:description',
+					content: 'Fullstack Javascript Engineer - Showcasing my work, experience, and articles',
+				},
 				{ name: 'twitter:image', content: '/og-image.jpg' },
+
+				{ name: 'og:image:type', content: 'image/jpeg' },
+				{ name: 'og:image:width', content: '1200' },
+				{ name: 'og:image:height', content: '630' },
+				{ name: 'og:image:alt', content: 'Muhamad Aziz Al-asaad - Portfolio' },
 			],
 			link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
 		},
