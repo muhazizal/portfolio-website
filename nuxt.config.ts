@@ -22,6 +22,12 @@ export default defineNuxtConfig({
 		head: {
 			charset: 'utf-8',
 			viewport: 'width=device-width, initial-scale=1',
+			meta: [
+				{ property: 'og:image', content: '/og-image.jpg' },
+				{ name: 'twitter:card', content: 'summary_large_image' },
+				{ name: 'twitter:image', content: '/og-image.jpg' },
+			],
+			link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
 		},
 		pageTransition: { name: 'page', mode: 'out-in' },
 	},
