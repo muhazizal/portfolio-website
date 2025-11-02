@@ -1,4 +1,6 @@
 ---
+featured: true
+order: 1
 title: Mastering Vue 3 Composition API
 description: Learn how to leverage the Composition API for better code organization and reusability.
 date: 2025-01-08
@@ -7,7 +9,6 @@ tags:
   - Vue.js
   - JavaScript
   - Frontend
-featured: false
 image: /images/blog/composition-api.jpg
 ---
 

@@ -5,7 +5,7 @@
 				<!-- Back Button -->
 				<NuxtLink
 					to="/blog"
-                    class="inline-flex items-center gap-2 text-sm text-gray-600 hover:text-primary mb-8 transition-colors"
+					class="inline-flex items-center gap-2 text-sm text-gray-600 hover:text-primary mb-8 transition-colors"
 				>
 					<UIcon name="i-heroicons-arrow-left" />
 					Back to Blog
@@ -14,7 +14,7 @@
 				<!-- Article Header -->
 				<header class="mb-12 opacity-0 animate-fade-in">
 					<!-- Meta -->
-                    <div class="flex items-center gap-3 text-sm text-gray-600 mb-4">
+					<div class="flex items-center gap-3 text-sm text-gray-600 mb-4">
 						<span>{{ formatDate(article.date) }}</span>
 						<span>•</span>
 						<span>{{ article.author }}</span>
@@ -26,7 +26,7 @@
 					</h1>
 
 					<!-- Description -->
-                    <p class="text-xl text-gray-700 mb-6">
+					<p class="text-xl text-gray-700 mb-6">
 						{{ article.description }}
 					</p>
 
@@ -40,15 +40,15 @@
 
 				<!-- Article Content -->
 				<div class="opacity-0 animate-fade-in stagger-1">
-                    <ContentRenderer :value="article" class="prose prose-lg max-w-none" />
+					<ContentRenderer :value="article" class="prose prose-lg max-w-none" />
 				</div>
 
 				<!-- Article Footer -->
-                <footer class="mt-16 pt-8 border-t border-gray-200 opacity-0 animate-fade-in stagger-2">
+				<footer class="mt-16 pt-8 border-t border-gray-200 opacity-0 animate-fade-in stagger-2">
 					<div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
 						<!-- Share -->
 						<div>
-                            <h3 class="text-sm font-semibold text-gray-600 mb-3 font-pt-serif">
+							<h3 class="text-sm font-semibold text-gray-600 mb-3 font-pt-serif">
 								Share this article
 							</h3>
 							<div class="flex gap-3">
@@ -122,7 +122,7 @@ useSeoMeta({
 </script>
 
 <style scoped>
-@reference '../assets/css/main.css';
+@reference '~/assets/css/main.css';
 
 :deep(.prose) {
 	@apply text-gray-700;

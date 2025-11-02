@@ -1,4 +1,6 @@
 ---
+featured: true
+order: 2
 title: Task Management App
 category: Productivity
 tech:
@@ -8,8 +10,6 @@ tech:
   - Vite
 github: https://github.com/muhazizal/task-manager
 demo: https://tasks.example.com
-featured: false
-order: 2
 image: /images/projects/tasks.jpg
 description: Collaborative task management application with real-time updates.
 ---

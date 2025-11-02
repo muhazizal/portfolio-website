@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div class="max-w-4xl mx-auto">
 		<!-- Hero Section -->
 		<section class="py-20 md:py-32">
 			<UContainer>
@@ -20,7 +20,7 @@
 		</section>
 
 		<!-- About Section -->
-		<section class="py-20 bg-royal-100/50">
+		<section class="py-20 bg-linear-to-r from-primary/5 to-primary/10 border-primary/20 rounded-lg">
 			<UContainer>
 				<div class="max-w-3xl">
 					<h2 class="text-3xl md:text-4xl font-bold mb-6 font-pt-serif">About Me</h2>
@@ -38,7 +38,7 @@
 			</UContainer>
 		</section>
 
-		<!-- Latest Work Experience -->
+		<!-- Work Experiences -->
 		<section class="py-20">
 			<UContainer>
 				<div class="flex justify-between items-center mb-12">
@@ -47,20 +47,25 @@
 				</div>
 				<div class="grid gap-6 md:grid-cols-2">
 					<UCard
-						v-for="(item, index) in latestWork"
-						:key="item._path"
-						class="opacity-0 animate-fade-in"
+						v-for="({ meta: work }, index) in workExperience"
+						:key="work.path"
+						class="opacity-0 animate-fade-in bg-linear-to-br from-primary/5 to-primary/15 border-primary/20"
 						:class="`stagger-${index + 1}`"
 					>
 						<div class="space-y-3">
 							<div class="flex justify-between items-start">
-								<h3 class="text-xl font-semibold font-pt-serif">{{ item.title }}</h3>
-								<span class="text-sm text-gray-600">{{ item.period }}</span>
+								<h3 class="text-xl font-semibold font-pt-serif">{{ work.title }}</h3>
+								<span class="text-sm text-gray-600">{{ work.period }}</span>
 							</div>
-							<p class="text-primary">{{ item.company }}</p>
-							<p class="text-gray-700">{{ item.description }}</p>
+							<p class="text-primary">{{ work.company }}</p>
+							<p class="text-gray-700">{{ work.description }}</p>
 							<div class="flex flex-wrap gap-2">
-								<UBadge v-for="tech in item.technologies" :key="tech" color="gray" variant="subtle">
+								<UBadge
+									v-for="tech in work.technologies"
+									:key="tech"
+									color="secondary"
+									variant="subtle"
+								>
 									{{ tech }}
 								</UBadge>
 							</div>
@@ -70,41 +75,47 @@
 			</UContainer>
 		</section>
 
-		<!-- Latest Projects -->
-		<section class="py-20 bg-royal-100/50">
+		<!-- Featured Projects -->
+		<section class="py-20 bg-linear-to-b from-primary/5 to-primary/10 border-primary/20 rounded-lg">
 			<UContainer>
 				<div class="flex justify-between items-center mb-12">
+					<UButton to="/projects" color="primary" variant="link">← View all</UButton>
 					<h2 class="text-3xl md:text-4xl font-bold font-pt-serif">Featured Projects</h2>
-					<UButton to="/projects" color="primary" variant="link">View all →</UButton>
 				</div>
 				<div class="grid gap-6 md:grid-cols-2">
 					<UCard
 						v-for="(project, index) in featuredProjects"
-						:key="project._path"
-						class="opacity-0 animate-fade-in"
+						:key="project.meta.path"
+						class="opacity-0 animate-fade-in bg-royal-50"
 						:class="`stagger-${index + 1}`"
 					>
-						<div class="space-y-3">
-							<h3 class="text-xl font-semibold font-pt-serif">{{ project.title }}</h3>
-							<p class="text-gray-700">{{ project.description }}</p>
-							<div class="flex flex-wrap gap-2">
-								<UBadge v-for="tech in project.tech" :key="tech" color="primary" variant="subtle">
+						<div class="space-y-3 text-right">
+							<h3 class="text-xl font-semibold font-pt-serif">{{ project.meta.title }}</h3>
+							<p class="text-gray-700">{{ project.meta.description }}</p>
+							<div class="flex flex-wrap gap-2 justify-end">
+								<UBadge
+									v-for="tech in project.meta.tech"
+									:key="tech"
+									color="secondary"
+									variant="subtle"
+								>
 									{{ tech }}
 								</UBadge>
 							</div>
-							<div class="flex gap-3 pt-2">
+							<div class="flex gap-3 pt-2 justify-end">
 								<UButton
-									v-if="project.demo"
-									:to="project.demo"
+									v-if="project.meta.demo"
+									:to="project.meta.demo"
 									target="_blank"
 									size="xs"
 									icon="i-heroicons-arrow-top-right-on-square"
+									color="primary"
 								>
 									Demo
 								</UButton>
 								<UButton
-									v-if="project.github"
-									:to="project.github"
+									v-if="project.meta.github"
+									:to="project.meta.github"
 									target="_blank"
 									color="gray"
 									size="xs"
@@ -127,34 +138,39 @@
 					<UButton to="/blog" color="primary" variant="link">View all →</UButton>
 				</div>
 				<div class="grid gap-6 md:grid-cols-2">
-					<UCard
+					<div
 						v-for="(article, index) in latestArticles"
-						:key="article._path"
+						:key="article.meta.path"
 						class="opacity-0 animate-fade-in"
 						:class="`stagger-${index + 1}`"
 					>
 						<div class="space-y-3">
 							<div class="text-sm text-gray-600">
-								{{ formatDate(article.date) }}
+								{{ formatDate(article.meta.date) }}
 							</div>
-							<h3 class="text-xl font-semibold">{{ article.title }}</h3>
-							<p class="text-gray-700">{{ article.description }}</p>
+							<h3 class="text-xl font-semibold font-pt-serif">{{ article.meta.title }}</h3>
+							<p class="text-gray-700">{{ article.meta.description }}</p>
 							<div class="flex flex-wrap gap-2">
-								<UBadge v-for="tag in article.tags" :key="tag" color="gray" variant="subtle">
+								<UBadge
+									v-for="tag in article.meta.tags"
+									:key="tag"
+									color="secondary"
+									variant="subtle"
+								>
 									{{ tag }}
 								</UBadge>
 							</div>
-							<UButton :to="article._path" color="primary" variant="link" class="mt-2">
+							<UButton :to="article.meta.path" color="primary" variant="link" class="mt-2">
 								Read article →
 							</UButton>
 						</div>
-					</UCard>
+					</div>
 				</div>
 			</UContainer>
 		</section>
 
 		<!-- FAQ Section -->
-		<section class="py-20 bg-royal-100/50">
+		<section class="py-20 bg-royal-100 rounded-lg">
 			<UContainer>
 				<div class="max-w-3xl mx-auto">
 					<h2 class="text-3xl md:text-4xl font-bold mb-12 text-center font-pt-serif">
@@ -183,20 +199,23 @@
 </template>
 
 <script setup>
-// Fetch latest work experiences
-const { data: latestWork } = await useAsyncData('latest-work', () =>
-	queryContent('work').sort({ order: 1 }).limit(2).find()
+// Fetch work experiences
+const { data: workExperience } = await useAsyncData('work-experiences', () =>
+	queryCollection('work').select('meta').limit(2).all()
 )
+workExperience.value = workExperience.value.filter((work) => work.meta.featured)
 
-// Fetch featured projects
-const { data: featuredProjects } = await useAsyncData('featured-projects', () =>
-	queryContent('projects').where({ featured: true }).sort({ order: 1 }).limit(2).find()
+// // Fetch featured projects
+const { data: featuredProjects } = await useAsyncData('featured-project', () =>
+	queryCollection('project').select('meta').limit(2).all()
 )
+featuredProjects.value = featuredProjects.value.filter((project) => project.meta.featured)
 
-// Fetch latest articles
+// // Fetch latest articles
 const { data: latestArticles } = await useAsyncData('latest-articles', () =>
-	queryContent('blog').sort({ date: -1 }).limit(2).find()
+	queryCollection('blog').select('meta').limit(2).all()
 )
+latestArticles.value = latestArticles.value.filter((article) => article.meta.featured)
 
 // Format date helper
 const formatDate = (date) => {

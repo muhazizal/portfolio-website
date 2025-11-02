@@ -16,6 +16,7 @@
 	--color-royal-950: #121c3f;
 
 	--color-primary: var(--color-royal-500);
+	--color-secondary: var(--color-emerald-500);
 }
 
 /* Page transitions */
