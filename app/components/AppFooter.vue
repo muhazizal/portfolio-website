@@ -1,5 +1,5 @@
 <template>
-	<footer class="border-t border-gray-200 py-12 bg-royal-50/50">
+	<footer class="border-t border-gray-200 py-12 bg-white">
 		<UContainer>
 			<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 				<!-- About -->

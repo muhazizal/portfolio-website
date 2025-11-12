@@ -126,7 +126,7 @@
 					</UCard>
 				</div>
 
-				<UCard class="mt-8 bg-linear-to-tr from-primary/20 to-primary/10">
+				<UCard class="mt-8 bg-linear-to-tr from-primary/10 to-primary/5">
 					<div class="space-y-4">
 						<h3 class="text-xl font-semibold">My Approach</h3>
 						<ul class="space-y-3 text-gray-700">

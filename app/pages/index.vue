@@ -49,7 +49,7 @@
 					<UCard
 						v-for="({ meta: work }, index) in workExperience"
 						:key="work.path"
-						class="opacity-0 animate-fade-in bg-linear-to-br from-primary/5 to-primary/15 border-primary/20"
+						class="opacity-0 animate-fade-in bg-linear-to-br from-primary/5 to-primary/10 border-primary/20"
 						:class="`stagger-${index + 1}`"
 					>
 						<div class="space-y-3">
@@ -170,7 +170,7 @@
 		</section>
 
 		<!-- FAQ Section -->
-		<section class="py-20 bg-royal-100 rounded-lg">
+		<section class="py-20 bg-linear-to-r from-primary/5 to-primary/10 border-primary/20 rounded-lg">
 			<UContainer>
 				<div class="max-w-3xl mx-auto">
 					<h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">

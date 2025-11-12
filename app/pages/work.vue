@@ -18,7 +18,7 @@
 						class="opacity-0 animate-fade-in"
 						:class="`stagger-${Math.min(index + 1, 5)}`"
 					>
-						<UCard class="bg-linear-to-br from-primary/5 to-primary/15 border-primary/20">
+						<UCard class="bg-linear-to-br from-primary/5 to-primary/10 border-primary/20">
 							<div class="space-y-4">
 								<!-- Header -->
 								<div class="flex flex-col md:flex-row md:justify-between md:items-start gap-3">
