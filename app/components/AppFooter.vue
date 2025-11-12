@@ -6,7 +6,7 @@
 				<div>
 					<h3 class="text-lg font-semibold mb-4">Muhamad Aziz Al-asaad</h3>
 					<p class="text-sm text-gray-600">
-						A passionate fullstack javascript engineer crafting seamless and engaging web
+						A passionate Software Engineer crafting seamless and engaging web
 						experiences.
 					</p>
 				</div>

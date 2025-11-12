@@ -8,8 +8,7 @@
 						Hi, I'm <span class="text-primary">Muhamad Aziz Al-asaad</span>
 					</h1>
 					<p class="text-xl md:text-2xl text-gray-600 mb-8 opacity-0 animate-fade-in stagger-1">
-						A passionate fullstack javascript engineer crafting seamless and engaging web
-						experiences.
+						A passionate software engineer crafting seamless and engaging web experiences.
 					</p>
 					<div class="flex gap-4 opacity-0 animate-fade-in stagger-2">
 						<UButton to="/projects" size="lg">View My Work</UButton>
@@ -25,9 +24,9 @@
 				<div class="max-w-3xl">
 					<h2 class="text-3xl md:text-4xl font-bold mb-6">About Me</h2>
 					<p class="text-lg text-gray-700 mb-4">
-						I'm a fullstack javascript engineer with a passion for creating elegant solutions to
-						complex problems. With expertise in modern web technologies, I build scalable
-						applications that are both user-friendly and developer-friendly.
+						I'm a software engineer with a passion for creating elegant solutions to complex
+						problems. With expertise in modern web technologies, I build scalable applications that
+						are both user-friendly and developer-friendly.
 					</p>
 					<p class="text-lg text-gray-700 mb-6">
 						I specialize in Vue.js, Nuxt.js, and Node.js, focusing on performance, accessibility,
@@ -259,6 +258,6 @@ const faqItems = [
 // SEO
 useSeoMeta({
 	title: 'Home - Muhamad Aziz Al-asaad Portfolio',
-	description: 'Fullstack Javascript Engineer - Showcasing my work, experience, and articles',
+	description: 'Software Engineer - Showcasing my work, experience, and articles',
 })
 </script>

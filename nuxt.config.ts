@@ -26,7 +26,7 @@ export default defineNuxtConfig({
 				{ property: 'og:title', content: 'Muhamad Aziz Al-asaad - Portfolio' },
 				{
 					property: 'og:description',
-					content: 'Fullstack Javascript Engineer - Showcasing my work, experience, and articles',
+					content: 'Software Engineer - Showcasing my work, experience, and articles',
 				},
 				{ property: 'og:type', content: 'website' },
 				{ property: 'og:url', content: 'https://muhazizal.dev' },
@@ -36,7 +36,7 @@ export default defineNuxtConfig({
 				{ name: 'twitter:title', content: 'Muhamad Aziz Al-asaad - Portfolio' },
 				{
 					name: 'twitter:description',
-					content: 'Fullstack Javascript Engineer - Showcasing my work, experience, and articles',
+					content: 'Software Engineer - Showcasing my work, experience, and articles',
 				},
 				{ name: 'twitter:image', content: '/og-image.jpg' },
 
@@ -53,7 +53,7 @@ export default defineNuxtConfig({
 	site: {
 		url: 'https://muhazizal.dev',
 		name: 'Muhamad Aziz Al-asaad - Portfolio',
-		description: 'Fullstack Javascript Engineer - Showcasing my work, experience, and articles',
+		description: 'Software Engineer - Showcasing my work, experience, and articles',
 		defaultLocale: 'en',
 	},
 

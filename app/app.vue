@@ -12,8 +12,8 @@
 useSeoMeta({
 	title: 'Muhamad Aziz Al-asaad - Portfolio',
 	ogTitle: 'Muhamad Aziz Al-asaad - Portfolio',
-	description: 'Fullstack Javascript Engineer - Showcasing my work, experience, and articles',
-	ogDescription: 'Fullstack Javascript Engineer - Showcasing my work, experience, and articles',
+	description: 'Software Engineer - Showcasing my work, experience, and articles',
+	ogDescription: 'Software Engineer - Showcasing my work, experience, and articles',
 	ogImage: '/og-image.jpg',
 	twitterCard: 'summary_large_image',
 })

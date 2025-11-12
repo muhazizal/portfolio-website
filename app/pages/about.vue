@@ -5,8 +5,7 @@
 			<div class="max-w-3xl mx-auto mb-20 text-center opacity-0 animate-fade-in">
 				<h1 class="text-4xl md:text-6xl font-bold mb-6">About Me</h1>
 				<p class="text-xl text-gray-600">
-					Get to know me, my journey, and what drives my passion for fullstack javascript
-					engineering.
+					Get to know me, my journey, and what drives my passion for software engineering.
 				</p>
 			</div>
 
@@ -17,8 +16,8 @@
 						<h2 class="text-3xl md:text-4xl font-bold mb-6">My Journey</h2>
 						<div class="space-y-4 text-gray-700">
 							<p>
-								My journey into fullstack javascript engineering began with curiosity and evolved
-								into a lifelong passion. What started as tinkering with HTML and CSS has grown into
+								My journey into software engineering began with curiosity and evolved into a
+								lifelong passion. What started as tinkering with HTML and CSS has grown into
 								building complex, scalable web applications.
 							</p>
 							<p>
@@ -274,6 +273,6 @@
 useSeoMeta({
 	title: 'About - Muhamad Aziz Al-asaad Portfolio',
 	description:
-		'Learn more about my journey, development philosophy, and what drives my passion for fullstack javascript engineering',
+		'Learn more about my journey, development philosophy, and what drives my passion for software engineering',
 })
 </script>
