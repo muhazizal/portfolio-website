@@ -250,8 +250,7 @@ const faqItems = [
 	},
 	{
 		label: 'How can I pay you?',
-		content:
-			'Payment is done through Wise with down payment 50% and the rest upon project completion.',
+		content: 'Payment is done through Wise with down payment and the rest upon project completion.',
 	},
 ]
 
